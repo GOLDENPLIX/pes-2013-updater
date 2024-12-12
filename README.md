@@ -1,33 +1,17 @@
 # 🎮 PES 2013 Updater Bot
 
-## Overview
-
-The PES 2013 Updater Bot is an advanced, automated tool designed to keep Pro Evolution Soccer 2013 game data current and accurate. It provides seamless updates for player transfers, team kits, and logos.
-
-![CI Status](https://github.com/yourusername/pes-2013-updater/workflows/CI/badge.svg)
-[![Python Versions](https://img.shields.io/pypi/pyversions/pes-updater.svg)](https://pypi.org/project/pes-updater/)
-[![Coverage](https://codecov.io/gh/yourusername/pes-2013-updater/branch/main/graph/badge.svg)](https://codecov.io/gh/yourusername/pes-2013-updater)
-
-## 🚀 Features
-
-- 📊 Automatic player transfer updates
-- 🖼️ Team logo and kit downloads
-- 🔄 Multi-league support
-- 🛡️ Robust error handling
-- 🌐 Flexible configuration
-
-## 📦 Installation
+## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.8+
-- pip
+- Football Data API Key
 
-### Setup
+### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pes-2013-updater.git
+git clone https://github.com/GOLDENPLIX/pes-2013-updater.git
 
-# Change directory
+# Navigate to project directory
 cd pes-2013-updater
 
 # Create virtual environment
@@ -38,54 +22,44 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 🔧 Configuration
-
-Create a `.env` file with the following:
+### Configuration
+1. Obtain a Football Data API Key from [football-data.org](https://www.football-data.org/)
+2. Create a `.env` file in the project root
+3. Add your API key:
 ```
-FOOTBALL_DATA_API_KEY=your_api_key
+FOOTBALL_DATA_API_KEY=your_api_key_here
 COMPETITIONS=PL,PD,BL1,SA,FL1
 LOG_LEVEL=INFO
 ```
 
-## 🖥️ Usage
-
-### Command Line
+### Usage
 ```bash
+# Run the updater
 python pes_updater.py --update-transfers --download-assets
+
+# Customize update options
+python pes_updater.py --leagues PL,PD --update-database
 ```
 
-### Customization Options
-- `--update-transfers`: Update player transfers
-- `--download-assets`: Download team logos and kits
-- `--leagues`: Specify leagues to update
-
 ## 🧪 Testing
-
 ```bash
 # Run all tests
 pytest
 
-# Coverage report
+# Generate coverage report
 pytest --cov=. --cov-report=html
 ```
 
 ## 🤝 Contributing
-
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## 📄 License
-
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## 🙌 Acknowledgments
-
 - PESMaster Community
 - Football-Data.org API
 - Open Source Contributors
-
-## 📞 Support
-
-For issues and feature requests, please [open an issue](https://github.com/yourusername/pes-2013-updater/issues).
 
 ---
 
