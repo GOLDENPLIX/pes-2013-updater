@@ -1,0 +1,34 @@
+leagues:
+  - name: Premier League
+    code: PL
+    teams:
+      - Manchester United
+      - Liverpool
+      - Manchester City
+      - Chelsea
+
+  - name: La Liga
+    code: PD
+    teams:
+      - Barcelona
+      - Real Madrid
+      - Atletico Madrid
+
+asset_sources:
+  - name: PES Master
+    url: https://www.pesmaster.com
+    priority: high
+
+  - name: PES Patch
+    url: https://www.pesstatusupdate.com
+    priority: medium
+
+download_settings:
+  max_concurrent_downloads: 5
+  retry_attempts: 3
+  timeout: 30  # seconds
+
+output:
+  base_directory: ./data/updates
+  create_zip: true
+  zip_filename_format: 'pes_update_{date}_{version}.zip'

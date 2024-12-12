@@ -1,0 +1,26 @@
+# Core Dependencies
+requests==2.31.0
+python-dotenv==1.0.0
+beautifulsoup4==4.12.2
+
+# Logging
+logging==0.5.1.2
+
+# Data Processing
+pandas==2.1.4
+
+# Testing Dependencies
+pytest==7.4.4
+pytest-cov==4.1.0
+unittest2==1.1.0
+mock==5.0.2
+
+# Optional: For advanced configuration and CLI
+click==8.1.7
+argparse==1.4.0
+
+# Web Scraping
+lxml==4.9.3
+
+# Performance and Concurrency
+concurrent.futures==3.3.1
